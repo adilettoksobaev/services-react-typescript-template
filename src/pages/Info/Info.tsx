@@ -2,6 +2,7 @@ import logoIcon from "../../img/info-logo.svg";
 import { Button } from "namba-one-ui";
 import { useNavigate } from "react-router-dom";
 import { LazyImage } from "../../components/LazyImage";
+import { useTranslation } from "react-i18next";
 import "./Info.scss";
 
 export type Props = {
@@ -10,6 +11,7 @@ export type Props = {
 
 function Info(props: Props) {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleСontinue = () => {
     return navigate("/main/?goBack");
@@ -26,12 +28,9 @@ function Info(props: Props) {
           моментальной оплаты
         </div>
       </div>
-      <Button
-        onClick={handleСontinue}
-        type="button"
-        variant="contained"
-        title="Продолжить"
-      ></Button>
+      <Button onClick={handleСontinue} type="button" variant="contained">
+        {t("continue")}
+      </Button>
     </div>
   );
 }

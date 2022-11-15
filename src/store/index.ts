@@ -1,14 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { githubApi } from "./github/github.api";
+import { appApi } from "./app/app.api";
 import { setupListeners } from "@reduxjs/toolkit/query";
-import { githubReducer } from "./github/github.slice";
+import { appReducer } from "./app/app.slice";
 
 export const store = configureStore({
-    reducer: {
-        [githubApi.reducerPath]: githubApi.reducer,
-        github: githubReducer,
-    },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(githubApi.middleware),
+  reducer: {
+    [appApi.reducerPath]: appApi.reducer,
+    app: appReducer,
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(appApi.middleware),
 });
 
 setupListeners(store.dispatch);

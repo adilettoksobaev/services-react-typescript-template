@@ -7,7 +7,7 @@ const MainPage = React.lazy(() => import("../pages/Main/Main"));
 
 function MainRouter() {
   return (
-    <Suspense fallback={<Loader variant="light" />}>
+    <Suspense fallback={<Loader type="loader-popup" variant="light" />}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/main" element={<MainPage />} />
