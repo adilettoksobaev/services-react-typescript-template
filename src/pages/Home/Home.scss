@@ -1,0 +1,29 @@
+.loader-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+  &__logo {
+    width: 90px;
+    height: 90px;
+    background-color: #c5ccdb;
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+  &__label {
+    font-size: 17px;
+    font-weight: 600;
+    color: #222324;
+    display: block;
+    text-align: center;
+  }
+  .loader__circle-border {
+    position: absolute;
+    bottom: 35px;
+  }
+}

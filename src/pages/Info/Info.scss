@@ -1,0 +1,32 @@
+.info {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  &__logo {
+    margin-bottom: 43px;
+  }
+  &__label {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 36px;
+  }
+  &__image-wrap {
+    min-height: 181px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+  }
+  .btn {
+    width: calc(100% - 32px);
+    position: absolute;
+    bottom: 15px;
+  }
+}
