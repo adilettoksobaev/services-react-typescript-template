@@ -1,0 +1,64 @@
+.container {
+    max-width: 414px;
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 8px;
+    padding-left: 8px;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.col-12 {
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.col-9 {
+    -webkit-box-flex: 0;
+    flex: 0 0 80%;
+    max-width: 80%;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.col-6 {
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.col-3 {
+    -webkit-box-flex: 0;
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding-right: 8px;
+    padding-left: 8px;
+}

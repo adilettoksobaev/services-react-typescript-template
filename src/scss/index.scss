@@ -1,0 +1,58 @@
+@import "fonts";
+@import "grid";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "San-Francisco-Display", sans-serif;
+  line-height: 1.2;
+  font-size: 17px;
+  font-weight: 400;
+  color: #222324;
+  box-sizing: border-box;
+  background-color: #f5f8fd;
+}
+
+html,
+body {
+  position: relative;
+  overflow: initial;
+  &.initial {
+    overflow: initial;
+  }
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+button,
+a {
+  user-select: none;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  padding-top: 16px;
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #222324;
+}
+.btn {
+  font-family: "San-Francisco-Display", sans-serif;
+}

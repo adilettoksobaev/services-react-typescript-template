@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "San-Francisco-Display";
+  src: url("../fonts/SF-Pro-Display/SF-Pro-Display-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "San-Francisco-Display";
+  src: url("../fonts/SF-Pro-Display/SF-Pro-Display-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "San-Francisco-Display";
+  src: url("../fonts/SF-Pro-Display/SF-Pro-Display-Medium.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "San-Francisco-Display";
+  src: url("../fonts/SF-Pro-Display/SF-Pro-Display-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/Namba-one-icon/icomoon.eot");
+  src: url("../fonts/Namba-one-icon/icomoon.eot#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Namba-one-icon/icomoon.ttf") format("truetype"),
+    url("../fonts/Namba-one-icon/icomoon.woff") format("woff"),
+    url("../fonts/Namba-one-icon/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
