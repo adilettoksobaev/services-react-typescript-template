@@ -1,5 +1,6 @@
+import { useEffect, useRef, useState } from "react";
 import { Loader } from "namba-one-ui";
-import React, { useEffect, useRef, useState } from "react";
+import { ErrorInfo } from "../../components/ErrorInfo/ErrorInfo";
 import { useAuthMeQuery } from "../../store/app/app.api";
 import { localStorageSetItem } from "../../utils/storage";
 import Info from "../Info";
@@ -13,7 +14,7 @@ function HomeContainer() {
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const [showInfo, setShowInfo] = useState(false);
 
-  const { isLoading, isError, data } = useAuthMeQuery("");
+  const { isLoading, isError, data, error } = useAuthMeQuery("");
 
   useEffect(() => {
     if (data) {
@@ -33,7 +34,7 @@ function HomeContainer() {
   }
 
   if (isError) {
-    return <h1>Что то пошло не так!</h1>;
+    return <ErrorInfo error={error} />;
   }
 
   if (!showInfo) {
